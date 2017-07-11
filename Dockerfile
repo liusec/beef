@@ -24,6 +24,8 @@ RUN  apt-get update \
 
 RUN gem install bundler
 
+RUN gem install nokogiri -v '1.7.2'
+
 WORKDIR /opt
 
 RUN git clone git://github.com/beefproject/beef.git
